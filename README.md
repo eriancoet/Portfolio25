@@ -1,4 +1,4 @@
-# portfolio39
+# Rian Coetzee | Web Developer, Sound Engineer, Video Editor and Graphic Designer
 
 This is my Portfolio Website for Rian C. Web Development, Video, Sound etc.
 
