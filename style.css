@@ -63,22 +63,31 @@ footer-basic {
     height: 200px;
   }
 
-  img {display: none;}
 
-  .Centered {
-    align-items: center;
-    justify-content: center;
-    display: block;
-    margin-left: 3rem;
-    margin-bottom: 3rem;
+  /* scroll animation */
 
-  }
+.reveal{
+  position: relative;
+  transform: translateY(130px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
 
-  .list {
-   display: inline;
-   text-align: center;
-   justify-items: flex-end;
-  }
-  
+ 
+/* Fade in Image */
+
+.easeload{
+    opacity: 0;
+    -webkit-transition: all 3s ease; 
+    -moz-transition: all 3s ease; 
+    -ms-transition: all 3s ease; 
+    -o-transition: all 3s ease; 
+}
+
+
 
   /* Credit to https://epicbootstrap.com/snippets/footer-basic */
