@@ -1,0 +1,337 @@
+/* Reset default browser styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Styles for the typing animation */
+#typing-text {
+    font-size: 39px;
+    opacity: 0;
+}
+
+/* Navbar styles */
+.navbar {
+    position: fixed; /* Fixed position at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar.visible {
+    opacity: 1;
+}
+
+.navbar1 {
+    
+        position: fixed; /* Fixed position at the top */
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        opacity: 1;
+       
+    }
+
+    .navbar1 li {
+        margin: 0 10px;
+    }
+    
+    .navbar1 a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .navbar1 ul {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        padding: 0;
+    }
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+}
+/* Add this to your stylesheet.css file */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Add this to your stylesheet.css file */
+
+.container {
+    position: relative;
+}
+
+
+
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.portfolio-image-container {
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+.portfolio-text-container {
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+.portfolio-text-container2 {
+    margin-top: 20px; /* Adjust as needed */
+}
+
+.portfolio-text,
+.portfolio-text2 {
+    color: #333; /* Adjust text color as needed */
+    font-size: 18px; /* Adjust font size as needed */
+}
+.portfolio-text-container2 {
+    margin-bottom: 40px; /* Add some margin to separate it from the previous content */
+}
+.portfolio-text-container2 {
+     /* Set the height to your desired value */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; 
+}
+.portfolio-container-culumn4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.portfolio-container-column2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.container-projects {
+    margin: 20px;
+    text-align: center;
+    width: 260px; /* Width of each container */
+}
+
+.img-container {
+    display: inline-block;
+    text-align: center;
+    max-width: 100%; /* Ensures text does not extend beyond image width */
+}
+
+.img-projects {
+    width: 100%;
+    height: auto;
+    max-width: 260px;
+    transition: transform 0.3s ease-in-out; /* Added transition for smooth hover effect */
+}
+
+.img-container:hover .img-projects {
+    transform: scale(1.1); /* Increase size on hover */
+}
+
+.column-text {
+    margin-top: 10px; /* Adjust as needed */
+    max-width: 100%; /* Ensures text does not extend beyond image width */
+    transition: color 0.3s ease-in-out; /* Added transition for smooth color change */
+}
+
+
+
+.portfolio-text-container3 {
+    display: flex;
+    
+    align-items: flex-start;
+    margin: 0 auto;
+    align-items: center; /* Align items to the top */
+}
+
+.portfolio-container-form {
+    margin: 0 auto;
+    align-items: center;
+    width: 100%; /* Adjust as needed */
+    
+}
+
+.container-form {
+    margin-top: 20px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    text-decoration: underline;
+    color:#8B0000
+
+}
+
+.container-heading {
+    margin: o auto;
+    text-align: center;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #8B0000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8B0000;
+}
+
+.container-form {
+    width: 45%; 
+    margin-bottom: 20px;/* Adjust as needed */
+}
+
+.img-container1 {
+    position: relative;
+}
+
+.img-projects1 {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer-basic footer {
+    text-align: center;
+}
+
+.footer-basic .social a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer-basic .list-inline {
+    margin-top: 20px;
+}
+
+.footer-basic .copyright {
+    margin-top: 20px;
+}
+
+.social-icons {
+    width: 40px;
+    height: auto;
+
+}
+
+.container-ct-form {
+    margin-top: 40px;
+}
+
+.contact-img {
+    width: 100%;
+  
+    position: relative;
+
+}
+.about-container {
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px;
+}
+h2 {
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+p {
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+  
+  .overlay-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  
+  /* Adjust styles for smaller screens */
+  @media screen and (max-width: 768px) {
+    .overlay-text {
+      font-size: 16px; /* Adjust font size for smaller screens */
+      padding: 10px; /* Add padding for better readability */
+    }
+  }
+  
+  
+  /* Adjust styles for smaller phones */
+  @media screen and (max-width: 480px) {
+    .overlay-text {
+      font-size: 14px; /* Further reduce font size for smaller phones */
+      padding: 8px;
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white; /* Further increase padding for better readability */
+    }
+  }
+  
