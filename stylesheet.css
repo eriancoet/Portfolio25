@@ -48,6 +48,7 @@ body {
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         z-index: 1000;
         opacity: 1;
+        margin-bottom: 40px;
        
     }
 
@@ -93,6 +94,23 @@ body {
     position: relative;
 }
 
+.two-columns {
+    display: flex;
+    margin: 0 auto;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    padding-top: 50px;;
+}
+
+.button {
+    border-radius: 50px;
+    width: 120px;
+    margin: 5px; /* Reduce margin to 5px */
+    padding: 10px;
+    font-style: bold;
+    font-stretch: expanded;
+}
 
 
 .portfolio-container {
@@ -139,31 +157,38 @@ body {
 .portfolio-container-column2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 5px;
+    grid-gap: 15px;
 }
 
 .container-projects {
-    margin: 20px;
+    margin: 15px;
     text-align: center;
-    width: 260px; /* Width of each container */
+    width: 260px; 
+    min-height: 300px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 50px;
+    overflow: hidden; /* Ensure content doesn't overflow */
 }
 
 .img-container {
-    display: inline-block;
-    text-align: center;
-    max-width: 100%; /* Ensures text does not extend beyond image width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
 }
 
 .img-projects {
-    width: 100%;
+    max-width: 70%;
+    max-height: 70%;
+    width: auto;
     height: auto;
-    max-width: 260px;
-    transition: transform 0.3s ease-in-out; /* Added transition for smooth hover effect */
+    padding: 10px;
 }
 
-.img-container:hover .img-projects {
-    transform: scale(1.1); /* Increase size on hover */
-}
+
+
+
 
 .column-text {
     margin-top: 10px; /* Adjust as needed */
@@ -242,7 +267,8 @@ button:hover {
 
 .container-form {
     width: 45%; 
-    margin-bottom: 20px;/* Adjust as needed */
+    margin-bottom: 20px;
+   
 }
 
 .img-container1 {
@@ -277,16 +303,19 @@ button:hover {
 
 }
 
+.container-heading {
+    margin-top: 100px;
+}
+
 .container-ct-form {
     margin-top: 40px;
 }
 
 .contact-img {
     width: 100%;
-  
     position: relative;
-
 }
+
 .about-container {
     margin: 0 auto;
     text-align: center;
@@ -329,23 +358,51 @@ p {
     width: 85%;
     padding: 5px;
     margin-left:10%;
-  }
+}
+  
   .img-size1 {
     width: 85%;
     padding: 5px;
     margin-left: 0px;
     margin-right: 10%;
+}
+
+.image-container {
+    overflow: hidden; /* Ensures the image won't overflow its container */
+    width: 500px;
+    height: 350px;
+    margin: 0 auto;
+    justify-content: center;
+   
   }
+
+  .image-container img {
+    width: 100%; /* Make the image fill the container */
+    transition: transform 0.3s; /* Add smooth transition effect */
+  }
+  
+  .image-container:hover img {
+    transform: scale(1.2); /* Zoom in on hover */
+  }
+
   .align-left {
     text-align: left;
-    margin: 0;
+    margin: 0 auto;
   }
 
   .align-left1 {
     text-align: left;
-    margin: 0;
+    margin: 0 auto;
     padding-right: 10%;
     margin-left: 10%;
+  }
+
+  /* WordPress Page */
+  .heading-section {
+    margin: 0 100px;
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
   }
   
   /* Adjust styles for smaller screens */
@@ -353,6 +410,9 @@ p {
     .overlay-text {
       font-size: 16px; /* Adjust font size for smaller screens */
       padding: 10px; /* Add padding for better readability */
+    }
+    .container-heading {
+        margin-top: 40px;
     }
   }
   
