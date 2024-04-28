@@ -1,6 +1,7 @@
 /* Reset default browser styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
+    color:#333;
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
@@ -10,13 +11,17 @@ body {
 
 /* Styles for the typing animation */
 #typing-text {
+    font-family: "Poppins", sans-serif;
+    font-stretch: expanded;
+    font-weight: 100;
     font-size: 39px;
     opacity: 0;
 }
 
 /* Navbar styles */
 .navbar {
-    position: fixed; /* Fixed position at the top */
+    position: fixed;
+    /* Fixed position at the top */
     top: 0;
     left: 0;
     width: 100%;
@@ -28,6 +33,9 @@ body {
 }
 
 .navbar ul {
+    font-family: "Poppins", sans-serif;
+    font-stretch: expanded;
+    font-weight: 100;
     display: flex;
     justify-content: center;
     list-style-type: none;
@@ -39,46 +47,66 @@ body {
 }
 
 .navbar1 {
-    
-        position: fixed; /* Fixed position at the top */
-        top: 0;
-        left: 0;
-        width: 100%;
-        background-color: #ffffff;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
-        opacity: 1;
-        margin-bottom: 40px;
-       
-    }
+    position: fixed;
+    /* Fixed position at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    opacity: 1;
+    margin-bottom: 40px;
+}
 
-    .navbar1 li {
-        margin: 0 10px;
-    }
-    
-    .navbar1 a {
-        text-decoration: none;
-        color: #333;
-        font-weight: bold;
-        font-size: 18px;
-    }
-
-    .navbar1 ul {
-        display: flex;
-        justify-content: center;
-        list-style-type: none;
-        padding: 0;
-    }
 .navbar li {
     margin: 0 10px;
 }
-
 .navbar a {
+    font-family: "Poppins", sans-serif;
+    font-stretch: expanded;
+    font-weight: 100;
     text-decoration: none;
     color: #333;
-    font-weight: bold;
     font-size: 18px;
+    margin: 0;
+    padding: 10px;
+    position: relative; /* Add position relative */
 }
+.navbar a {
+    font-family: "Poppins", sans-serif;
+    font-stretch: expanded;
+    font-weight: 100;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    margin: 0;
+    padding: 10px;
+    position: relative; /* Add position relative */
+    overflow: hidden; /* Hide overflow */
+}
+
+.navbar a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; /* Initially set width to 0 */
+    height: 100%;
+    background-color: #8B0000;
+    z-index: -1; /* Ensure the pseudo-element is behind the text */
+    transition: width 0.3s ease; /* Add transition effect */
+}
+
+.navbar a:hover::after {
+    width: calc(100% - 5px); /* Expand the background color on hover */
+}
+
 /* Add this to your stylesheet.css file */
 
 .container {
@@ -100,17 +128,29 @@ body {
     align-content: center;
     text-align: center;
     justify-content: center;
-    padding-top: 50px;;
+    padding-top: 50px;
 }
 
 .button {
     border-radius: 50px;
-    width: 120px;
-    margin: 5px; /* Reduce margin to 5px */
-    padding: 10px;
+    border: 0;
+    width: 150px; /* Fixed width for all buttons */
+    margin: 10px;
+    background-color: rgb(7, 7, 66);
+    color: white;
+    padding: 15px 30px; 
     font-style: bold;
     font-stretch: expanded;
+    transition: transform 0.3s ease; /* Add transition for transform */
 }
+
+.button:hover {
+    transform: scale(1.1); /* Increase scale on hover */
+    background-color: #8B0000;
+}
+
+
+
 
 
 .portfolio-container {
@@ -122,31 +162,41 @@ body {
 }
 
 .portfolio-image-container {
-    margin-bottom: 20px; /* Adjust as needed */
+    margin-bottom: 20px;
+    /* Adjust as needed */
 }
 
 .portfolio-text-container {
-    margin-bottom: 20px; /* Adjust as needed */
+    margin-bottom: 20px;
+    /* Adjust as needed */
 }
 
 .portfolio-text-container2 {
-    margin-top: 20px; /* Adjust as needed */
+    margin-top: 20px;
+    /* Adjust as needed */
 }
 
 .portfolio-text,
 .portfolio-text2 {
-    color: #333; /* Adjust text color as needed */
-    font-size: 18px; /* Adjust font size as needed */
+    color: #333;
+    /* Adjust text color as needed */
+    font-size: 18px;
+    /* Adjust font size as needed */
 }
+
 .portfolio-text-container2 {
-    margin-bottom: 40px; /* Add some margin to separate it from the previous content */
+    margin-bottom: 40px;
+    /* Add some margin to separate it from the previous content */
 }
+
 .portfolio-text-container2 {
-     /* Set the height to your desired value */
+    /* Set the height to your desired value */
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; 
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
 }
+
 .portfolio-container-culumn4 {
     display: flex;
     flex-wrap: wrap;
@@ -163,19 +213,21 @@ body {
 .container-projects {
     margin: 15px;
     text-align: center;
-    width: 260px; 
+    width: 260px;
     min-height: 300px;
     background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 50px;
-    overflow: hidden; /* Ensure content doesn't overflow */
+    overflow: hidden;
+    /* Ensure content doesn't overflow */
 }
 
 .img-container {
     display: flex;
     align-items: center;
     justify-content: center;
-   
+    
+
 }
 
 .img-projects {
@@ -184,6 +236,13 @@ body {
     width: auto;
     height: auto;
     padding: 10px;
+    transition: transform 0.3s ease;
+
+
+}
+.img-projects:hover {
+    transform: scale(1.1);
+
 }
 
 
@@ -191,26 +250,38 @@ body {
 
 
 .column-text {
-    margin-top: 10px; /* Adjust as needed */
-    max-width: 100%; /* Ensures text does not extend beyond image width */
-    transition: color 0.3s ease-in-out; /* Added transition for smooth color change */
+    margin-top: 10px;
+    /* Adjust as needed */
+    max-width: 100%;
+    /* Ensures text does not extend beyond image width */
+    transition: color 0.3s ease-in-out, 
+
+
 }
+
+
+.column-text:hover { 
+    color:#8B0000;
+}
+
 
 
 
 .portfolio-text-container3 {
     display: flex;
-    
+
     align-items: flex-start;
     margin: 0 auto;
-    align-items: center; /* Align items to the top */
+    align-items: center;
+    /* Align items to the top */
 }
 
 .portfolio-container-form {
     margin: 0 auto;
     align-items: center;
-    width: 100%; /* Adjust as needed */
-    
+    width: 100%;
+    /* Adjust as needed */
+
 }
 
 .container-form {
@@ -224,16 +295,17 @@ a {
     text-decoration: none;
     color: rgb(7, 7, 66);
 }
+
 a:hover {
     text-decoration: underline;
-    color:#8B0000
-
+    color: #8B0000
 }
 
 .container-heading {
     margin: o auto;
     text-align: center;
 }
+
 .form-group {
     margin-bottom: 20px;
 }
@@ -251,7 +323,7 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-
+/*
 button {
     background-color: #8B0000;
     color: white;
@@ -264,11 +336,11 @@ button {
 button:hover {
     background-color: #8B0000;
 }
-
+*/
 .container-form {
-    width: 45%; 
+    width: 45%;
     margin-bottom: 20px;
-   
+
 }
 
 .img-container1 {
@@ -321,46 +393,51 @@ button:hover {
     text-align: center;
     padding: 40px;
 }
+
 h2 {
+    font-family: "Poppins", sans-serif;
+    font-stretch: expanded;
+    font-weight: 100;
     margin: 0 auto;
     text-align: center;
     padding: 20px;
 }
+
 p {
     margin: 0 auto;
     text-align: center;
     padding: 20px;
 }
-  
-  .overlay-text {
+
+.overlay-text {
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-  }
+}
 
-  .container-centered,
-  .container-heybassh {
+.container-centered,
+.container-heybassh {
     margin: 0 auto;
     justify-content: center;
     align-items: center;
-  }
-  
-  .container-heybassh {
+}
+
+.container-heybassh {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
-  }
+}
 
-  .img-size {
+.img-size {
     width: 85%;
     padding: 5px;
-    margin-left:10%;
+    margin-left: 10%;
 }
-  
-  .img-size1 {
+
+.img-size1 {
     width: 85%;
     padding: 5px;
     margin-left: 0px;
@@ -368,66 +445,74 @@ p {
 }
 
 .image-container {
-    overflow: hidden; /* Ensures the image won't overflow its container */
+    overflow: hidden;
+    /* Ensures the image won't overflow its container */
     width: 500px;
     height: 350px;
     margin: 0 auto;
     justify-content: center;
-   
-  }
 
-  .image-container img {
-    width: 100%; /* Make the image fill the container */
-    transition: transform 0.3s; /* Add smooth transition effect */
-  }
-  
-  .image-container:hover img {
-    transform: scale(1.2); /* Zoom in on hover */
-  }
+}
 
-  .align-left {
+.image-container img {
+    width: 100%;
+    /* Make the image fill the container */
+    transition: transform 0.3s;
+    /* Add smooth transition effect */
+}
+
+.image-container:hover img {
+    transform: scale(1.2);
+    /* Zoom in on hover */
+}
+
+.align-left {
     text-align: left;
     margin: 0 auto;
-  }
+}
 
-  .align-left1 {
+.align-left1 {
     text-align: left;
     margin: 0 auto;
     padding-right: 10%;
     margin-left: 10%;
-  }
+}
 
-  /* WordPress Page */
-  .heading-section {
+/* WordPress Page */
+.heading-section {
     margin: 0 100px;
     text-align: center;
     padding: 30px;
     margin-top: 40px;
-  }
-  
-  /* Adjust styles for smaller screens */
-  @media screen and (max-width: 768px) {
+}
+
+/* Adjust styles for smaller screens */
+@media screen and (max-width: 768px) {
     .overlay-text {
-      font-size: 16px; /* Adjust font size for smaller screens */
-      padding: 10px; /* Add padding for better readability */
+        font-size: 16px;
+        /* Adjust font size for smaller screens */
+        padding: 10px;
+        /* Add padding for better readability */
     }
+
     .container-heading {
         margin-top: 40px;
     }
-  }
-  
-  
-  /* Adjust styles for smaller phones */
-  @media screen and (max-width: 480px) {
+}
+
+
+/* Adjust styles for smaller phones */
+@media screen and (max-width: 480px) {
     .overlay-text {
-      font-size: 14px; /* Further reduce font size for smaller phones */
-      padding: 8px;
-      position: absolute;
-      top: 25%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      color: white; /* Further increase padding for better readability */
+        font-size: 14px;
+        /* Further reduce font size for smaller phones */
+        padding: 8px;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        /* Further increase padding for better readability */
     }
-  }
-  
+}
