@@ -50,4 +50,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
     window.addEventListener('scroll', showPortfolio);
 });
+var currentVisibleIndex = 0; // Initialize currentVisibleIndex to 0 for Groupworx
 
+function showDiv(index) {
+    // Get all showcase divs
+    var showcaseDivs = document.querySelectorAll('.featured-showcase');
+    
+    // Hide the currently visible div with fade-out effect
+    if (currentVisibleIndex !== null) {
+        showcaseDivs[currentVisibleIndex].classList.remove('show');
+    }
+    
+    // Show the clicked showcase div with fade-in effect
+    showcaseDivs[index].classList.add('show');
+    
+    // Update the currentVisibleIndex
+    currentVisibleIndex = index;
+}

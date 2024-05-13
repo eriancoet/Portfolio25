@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toggle Divs on Button Click</title>
+<style>
+    .featured-showcase {
+        display: none; /* Hide all divs by default */
+    }
+
+    .comp-container {
+        margin: 0 auto;
+        display: flex;
+        width: 60%;
+        height: auto;
+
+    }
+
+    .comp-img img {
+        width: 300px;
+        height: auto;
+    }
+</style>
+</head>
+<body>
+
+<div class="featured-container">
+    <div class="featured-line">
+        <div class="featured-buttons">
+            <button onclick="showDiv(0)">Groupworx</button>
+            <button onclick="showDiv(1)">NextJS Portfolio</button>
+            <button onclick="showDiv(2)">React Project</button>
+        </div>
+    </div>
+    <div class="featured-showcase">
+        <div class="comp-container">
+        <div class="comp-img">
+            <img src="img/celesyard.jpg" alt="image of comp">
+        </div>
+        <div class="text-content">
+            <h1>Hello World</h1>
+            <p>Content goes here, this is ontent goes hereontent goes hereontent goes here
+            ontent goes hereontent goes hereontent goes hereontent goes here.
+            </p>
+        </div>
+     </div>
+    </div>
+    <div class="featured-showcase">2</div>
+    <div class="featured-showcase">3</div>
+</div>
+
+<script>
+    var currentVisibleIndex = null;
+
+    function showDiv(index) {
+        // Get all showcase divs
+        var showcaseDivs = document.querySelectorAll('.featured-showcase');
+        
+        // Hide the currently visible div
+        if (currentVisibleIndex !== null) {
+            showcaseDivs[currentVisibleIndex].style.display = 'none';
+        }
+        
+        // Show the clicked showcase div
+        showcaseDivs[index].style.display = 'block';
+        
+        // Update the currentVisibleIndex
+        currentVisibleIndex = index;
+    }
+</script>
+
+</body>
+</html>
