@@ -435,6 +435,9 @@ textarea {
 }
 .text-content h1 {
  margin-left: 45px;
+ margin-bottom: 0;
+ padding-bottom: 0px;
+ line-height: 40px;
 }
 
 .spacer {

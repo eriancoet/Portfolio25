@@ -100,3 +100,31 @@ function onScroll() {
 window.addEventListener("scroll", onScroll);
 
 
+
+
+// Get the featured container element
+var featuredContainer = document.querySelector('.featured-container');
+
+// Function to check if the element is in the viewport
+function isInViewport(element) {
+    var rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+// Function to handle scroll event
+function onScroll() {
+    if (isInViewport(featuredContainer)) {
+        // Add a class to trigger the animation
+        featuredContainer.classList.add('show');
+        // Remove the scroll event listener once the animation is triggered
+        window.removeEventListener('scroll', onScroll);
+    }
+}
+
+// Add scroll event listener
+window.addEventListener('scroll', onScroll);
