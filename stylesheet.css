@@ -265,7 +265,7 @@ body {
 
 
 
-.column-text{
+.column-text h2{
     margin-top: 10px;
     /* Adjust as needed */
     max-width: 100%;
@@ -274,6 +274,12 @@ body {
 
 
 }
+
+
+.column-text h2:hover { 
+    color:#8B0000;
+}
+
 
 
 
@@ -435,9 +441,6 @@ textarea {
 }
 .text-content h1 {
  margin-left: 45px;
- margin-bottom: 0;
- padding-bottom: 0px;
- line-height: 40px;
 }
 
 .spacer {
