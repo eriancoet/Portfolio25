@@ -109,7 +109,7 @@ body {
 }
 
 .navbar1 a:hover::after {
-    width: calc(100% - 5px); /* Expand the background color on hover */
+    width: calc(100% - 4.5px); /* Expand the background color on hover */
 }
 
 .navbar li {
@@ -157,7 +157,7 @@ body {
 }
 
 .navbar a:hover::after {
-    width: calc(100% - 5px); /* Expand the background color on hover */
+    width: calc(100% - 4.5px); /* Expand the background color on hover */
 }
 
 /* Add this to your stylesheet.css file */
