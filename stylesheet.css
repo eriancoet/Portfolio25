@@ -205,7 +205,7 @@ body {
 
 #portfolio-container {
     opacity: 0; /* Initially hide the element */
-    transform: translateY(40px) translateX(0); /* Move the element down by 40px without any horizontal movement */
+    transform: translateY(10px) translateX(0); /* Move the element down by 40px without any horizontal movement */
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Add transition effect */
 }
 
@@ -218,7 +218,7 @@ body {
 @keyframes slideUp {
     from {
         opacity: 0;
-        transform: translateY(40px); /* Starts from 40px below */
+        transform: translateY(10px); /* Starts from 40px below */
     }
     to {
         opacity: 1;
