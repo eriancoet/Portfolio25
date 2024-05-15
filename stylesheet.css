@@ -109,7 +109,7 @@ body {
 }
 
 .navbar1 a:hover::after {
-    width: calc(100% - 4px); /* Expand the background color on hover */
+    width: calc(100% - 3px); /* Expand the background color on hover */
 }
 
 .navbar li {
@@ -157,7 +157,7 @@ body {
 }
 
 .navbar a:hover::after {
-    width: calc(100% - 4px); /* Expand the background color on hover */
+    width: calc(100% - 4px); 
 }
 
 /* Add this to your stylesheet.css file */
@@ -480,6 +480,11 @@ textarea {
 
 }
 
+.spacer-div {
+   
+    padding:40px;
+}
+
 .comp-container button {
     display: flex; /* Use flexbox */
     justify-content: flex-start; 
@@ -573,6 +578,9 @@ p {
     padding: 20px;
 }
 
+
+/* heybassh.html */
+
 .overlay-text {
     position: absolute;
     top: 40%;
@@ -582,65 +590,50 @@ p {
     color: white;
 }
 
-.container-centered,
-.container-heybassh {
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
+.container-centered h2{
+    margin-top: 50px;
+    padding: 0;
 }
 
 .container-heybassh {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-}
-
-.img-size {
-    width: 85%;
-    padding: 5px;
-    margin-left: 10%;
-}
-
-.img-size1 {
-    width: 85%;
-    padding: 5px;
-    margin-left: 0px;
-    margin-right: 10%;
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
 }
 
 .image-container {
-    overflow: hidden;
-    /* Ensures the image won't overflow its container */
-    width: 500px;
-    height: 350px;
-    margin: 0 auto;
-    justify-content: center;
-
+    width: 400px;
+    height: auto; /* Adjust width as needed */
+    margin-left: 10%; 
+    margin-top: 20px;
 }
 
-.image-container img {
-    width: 100%;
-    /* Make the image fill the container */
-    transition: transform 0.3s;
-    /* Add smooth transition effect */
+.text-content {
+    flex: 1;
+    margin-right: 10%;
+    margin-top: 10px;
+    padding-left: 70px;
 }
 
-.image-container:hover img {
-    transform: scale(1.2);
-    /* Zoom in on hover */
-}
-
-.align-left {
-    text-align: left;
-    margin: 0 auto;
-}
-
-.align-left1 {
-    text-align: left;
-    margin: 0 auto;
-    padding-right: 10%;
+.img-size {
+    width: 400px;
+    padding: 5px;
     margin-left: 10%;
+    padding-right: 100px;
 }
+
+.img-size1 {
+    width: 400px;
+    padding: 5px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.heybash-width {
+    margin: 0 auto;
+    align-content: center;
+    width: 80%;
+}
+
 
 /* WordPress Page */
 .heading-section {
@@ -648,6 +641,11 @@ p {
     text-align: center;
     padding: 30px;
     margin-top: 40px;
+}
+
+.about-container p {
+    line-height: 22px;
+    margin: 0 10% ;
 }
 
 /* Adjust styles for smaller screens */

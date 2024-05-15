@@ -4,8 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="shortcut icon" type="image/jpeg" href="img/favicon.jpeg">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="slider.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
 <link rel="stylesheet" href="stylesheet.css">
-<title>Portfolio of Rian</title>
+<title>Portfolio of Rian - Projects</title>
 </head>
 <body>
 
@@ -17,103 +22,309 @@
         <li><a href="contactme.html">Contact</a></li>
     </ul>
 </div>
-<div><img class="contact-img" src="img/projects.jpg" alt="contact image top"></div>
-<div class="overlay-text">
-    <h1>My Projects</h1>
-    <p>Projects that I did for web development</p>
-  </div>
-
-  <br><div class="portfolio-text-container2">
+<div class="spacer-div"></div>
+<div class="featured-container">
+    <h2>Featured Projects</h2>
+    <div class="featured-line">
+        <div class="featured-buttons">
+            <button onclick="showDiv(0)">Groupworx</button>
+            <button onclick="showDiv(1)">NextJS Portfolio</button>
+            <button onclick="showDiv(2)">React Project</button>
+        </div>
+    </div>
+    <div class="spacer"></div>
+    <div class="featured-showcase show">
+        <div class="comp-container">
+            <div class="comp-img">
+                <img src="img/groupworx.jpg" alt="image of comp">
+            </div>
+            <div class="text-content">
+                <h1>Groupworx</h1>
+                <p>This is an HTML, CSS and JavaScript Project for a recruitment agency. We are in the process of
+                    making a ReactJS app.
+                    <br>
+                    <br>
+                    The Site is for recruitment and helps clients find the right person for the job.
+                </p>
+                <a href="https://eriancoet.github.io/groupworx/" target="_blank">
+                    <button class="button-passion">Go to live site</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="featured-showcase">
+        <div class="comp-container">
+            <div class="comp-img">
+                <img src="img/nextjs.jpg" alt="image of comp">
+            </div>
+            <div class="text-content">
+                <h1>NextJS Portfolio</h1>
+                <p>This is a NextJS project that showcases my work and my interest in Web Development and Code.<br>
+                    <br>
+                    The Site is created with NextJS which is a JavaScript Framework.
+                </p>
+                <a href="https://project-rian-cnew-gjc4ncwvh-eriancoet.vercel.app/" target="_blank">
+                    <button class="button-passion">Go to live site</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="featured-showcase">
+        <div class="comp-container">
+            <div class="comp-img">
+                <img src="img/Map-View.jpg" alt="image of comp">
+            </div>
+            <div class="text-content">
+                <h1>Map-View</h1>
+                <p>This is ReactJs Application for mapping out an area of customers on a google map.
+                    <br>
+                    <br>
+                    The Web-site is created with ReactJs.
+                </p>
+                <a href="https://mapview-j1j3.onrender.com/MapList" target="_blank">
+                    <button class="button-passion">Go to live site</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="spacer-div"></div>
+<div class="portfolio-text" id="portfolio-text">
+    <h2 class="passion-h2">
+        My Projects
+    </h2>
+</div>
+<div class="portfolio-text-container2">
     <div class="portfolio-container-culumn4">
         <div class="container-projects">
             <div class="img-container">
-               <a href="wordpress.html"> <img class="img-projects" src="img/4.png" alt="Wordpress Projects">
-                <div class="column-text">
-                    <h2>WordPress Projects</h2>
-                    <p>Projects created with WordPress will be following when you click the link</p>
-                </div>
-              </a>
+                <a href="wordpress.html">
+                    <img class="img-projects" src="img/4.png" alt="Wordpress Projects">
+                </a>
+            </div>
+            <div class="column-text">
+                <a href="wordpress.html">
+                <h2>WordPress Projects</h2>
+                </a>
+                <p>Projects created with WordPress will be following when you click the link</p>
+
             </div>
         </div>
-    
+
         <div class="container-projects">
             <div class="img-container">
-               <a href="https://project-rian-cnew-gjc4ncwvh-eriancoet.vercel.app/"> <img class="img-projects" src="img/3.png" alt="Vercel">
-                <div class="column-text">
-                    <h2>Older Portfolio</h2>
-                    <p>Created with Next.js</p>
-                </div>
-            </a>
+                <a href="https://project-rian-cnew-gjc4ncwvh-eriancoet.vercel.app/">
+                    <img class="img-projects" src="img/3.png" alt="Vercel">
+                </a>
             </div>
-        
-        </div>
-    
-        <div class="container-projects">
-            <div class="img-container">
-               <a href="heybassh.html"> <img class="img-projects" src="img/2.png" alt="heybassh projects">
-                <div class="column-text">
-                    <h2>Heybassh Projects</h2>
-                    <p>These are projects credited to Heybassh Inc</p>
-                </div>
-               </a>
+            <div class="column-text">
+                <a href="https://project-rian-cnew-gjc4ncwvh-eriancoet.vercel.app/">
+                <h2>Next.js Portfolio</h2>
+                </a>
+                <p>A Portfolio created with Next.js a React.js framework</p>
             </div>
         </div>
-    
+
         <div class="container-projects">
             <div class="img-container">
-                <a href="https://hubspot-developers-1n44kqg-8913181.hs-sites.com/home?fbclid=IwAR0AtYJpy6-YBUkZL-YPEBxYwZY-gxWs03NLYzjuGo-ju38TWi-nzgUxUko_aem_AbETZwQKylLOadJYf-VrJ6uCwtWvbjGVhfr9DFX3tFB-O1PKFNmNUhU3Ikh6u8MzzsntEEH7BDQb1xA9KQWKu5ww" ><img class="img-projects" src="img/1.png" alt="Restaurant">
-                <div class="column-text">
+                <a href="heybassh.html">
+                    <img class="img-projects" src="img/2.png" alt="heybassh projects">
+                </a>
+            </div>
+            <div class="column-text">
+                <a href="heybassh.html">
+                <h2>Heybassh Projects</h2>
+                </a>
+                <p>These are projects credited to Heybassh Inc</p>
+            </div>
+
+
+        </div>
+
+        <div class="container-projects">
+            <div class="img-container">
+                <a
+                    href="https://hubspot-developers-1n44kqg-8913181.hs-sites.com/home?fbclid=IwAR0AtYJpy6-YBUkZL-YPEBxYwZY-gxWs03NLYzjuGo-ju38TWi-nzgUxUko_aem_AbETZwQKylLOadJYf-VrJ6uCwtWvbjGVhfr9DFX3tFB-O1PKFNmNUhU3Ikh6u8MzzsntEEH7BDQb1xA9KQWKu5ww">
+                    <img class="img-projects" src="img/1.png" alt="Restaurant">
+                </a>
+            </div>
+            <div class="column-text">
+                <a
+                    href="https://hubspot-developers-1n44kqg-8913181.hs-sites.com/home?fbclid=IwAR0AtYJpy6-YBUkZL-YPEBxYwZY-gxWs03NLYzjuGo-ju38TWi-nzgUxUko_aem_AbETZwQKylLOadJYf-VrJ6uCwtWvbjGVhfr9DFX3tFB-O1PKFNmNUhU3Ikh6u8MzzsntEEH7BDQb1xA9KQWKu5ww">
                     <h2>Restaurant</h2>
-                    <p>This is the African Elephant Restaurant Website</p>
-                </div>
-            </a>
+                </a>
+                <p>This is the African Elephant Restaurant Website</p>
             </div>
+
+
         </div>
     </div>
+</div>
+<br>
+<div class="slider-heading">
+    <h2>Technologies include</h2>
+</div>
+<div class="main">
+    <div class="slider slider-for">
+        <div>
+            <h3>Pre-screening</h4>
+
+
+        </div>
+
+        <div>
+            <h3>2</h3>
+        </div>
+        <div>
+            <h3>3</h3>
+        </div>
+        <div>
+            <h3>4</h3>
+        </div>
+        <div>
+            <h3>5</h3>
+        </div>
+        <div>
+            <h3>6</h3>
+        </div>
+        <div>
+            <h3>7</h3>
+        </div>
+        <div>
+            <h3>8</h3>
+        </div>
+        <div>
+            <h3>9</h3>
+        </div>
+        <div>
+            <h3>10</h3>
+        </div>
+    </div>
+    <div class="slider slider-nav">
+
+        <div class="slide">
+            <h4>
+                ReactJS
+            </h4>
+
+            <p>
+                Frontend Development
+            </p>
+        </div>
+        <div class="slide">
+            <h4>NodeJS</h4>
+
+            <p>
+                Backend Knowldge with Mern Stacks
+            </p>
+        </div>
+        <div class="slide">
+            <h4>HTML</h4>
+
+            <p>
+                Building Websites
+            </p>
+        </div>
+        <div class="slide">
+            <h4>CSS</h4>
+
+            <p>
+                Styling Webpages
+            </p>
+        </div>
+        <div class="slide">
+            <h4>WordPress</h4>
+
+            <p>Divi-nation, Elementor, and plugin creation</p>
+        </div>
+        <div class="slide">
+            <h4>Bootstrap</h4>
+
+            <p>
+                CSS libraries also include Tailwind Css
+            </p>
+        </div>
+        <div class="slide">
+            <h4>Git</h4>
+
+            <p>
+                Git and Github knowledge
+            </p>
+        </div>
+        <div class="slide">
+            <h4>PHP</h4>
+
+            <p>
+                PHP for plugin creation
+            </p>
+        </div>
+        <div class="slide">
+            <h4>Responsive Design</h4>
+
+            <p>
+                Mobile First Design
+            </p>
+        </div>
+        <div class="slide">
+            <h4>JavaScript</h4>
+
+            <p>
+                API's, Munipulating the DOM etc.
+            </p>
+        </div>
+
+    </div>
+    <div class="action">
+        <a href="#" data-slide="3">go to slide 3</a>
+        <a href="#" data-slide="4">go to slide 4</a>
+        <a href="#" data-slide="5">go to slide 5</a>
     </div>
     <br>
-<div class="container-ct-form">
-
-
-<div class="portfolio-container-form">
-    <div class="container-heading">
-        <h2>Contact Me</h2>
-    </div>
-    <div class="container-form">
-        <form action="https://formspree.io/f/xeqwkvja" method="POST">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+    <div class="portfolio-text-container3">
+        <div class="portfolio-container-form">
+            <div class="container-heading">
+                <h2>Contact Me</h2>
             </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+            <div class="container-form">
+                <form action="https://formspree.io/f/xeqwkvja" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button class="button-passion" type="submit">Submit</button>
+                </form>
             </div>
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-            </div>
-            <button type="submit">Submit</button>
-        </form>
-    </div>
 
 
-</div>
-</div>
-
-
-<div class="footer-basic">
-    <footer>
-      <div class="social">
-            <a href="https://www.instagram.com/?hl=en" target="_blank"><img class="social-icons" src="img/instagram.png"></a>
-            <a href="https://twitter.com" target="_blank"><img class="social-icons" src="img/twitter.png"></a>
-            <a href="https://www.facebook.com/" target="_blank"><img class="social-icons" src="img/facebook.png"></a>
         </div>
-    
-      <p class="copyright">RianC © 2024</p>
-    </footer>
-  </div>
+    </div>
 
 
+    <div class="footer-basic">
+        <footer>
+            <div class="social">
+                <a href="https://www.instagram.com/?hl=en" target="_blank"><img class="social-icons"
+                        src="img/instagram.png"></a>
+                <a href="https://twitter.com" target="_blank"><img class="social-icons" src="img/twitter.png"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img class="social-icons"
+                        src="img/facebook.png"></a>
+            </div>
+
+            <p class="copyright">RianC © 2024</p>
+        </footer>
+    </div>
+    <script src="scriptJS1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="slider.js" async defer></script>
 </body>
+
 </html>
