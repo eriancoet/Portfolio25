@@ -1,83 +1,85 @@
-        .slider-heading h2{
-            margin: 0 auto;
-            text-align: center;
-            padding: 40px;
-        }
-        
-        
+    .slider-heading h2 {
+        margin: 0 auto;
+        text-align: center;
+        padding: 40px;
+    }
+
+
+    .main {
+        font-family: "Poppins", sans-serif;
+        font-stretch: expanded;
+        font-weight: 100;
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .slide {
+        width: 350px;
+        height: auto;
+        background: rgb(7, 7, 66);
+        /* RGBA color with 50% transparency */
+        color: #ffffff;
+        /* Text color */
+        border-radius: 10px;
+        margin: 5px;
+        cursor: grab;
+    }
+
+
+
+    .slide a {
+        color: white;
+        text-decoration: none;
+
+    }
+
+    .slide h4 {
+        color: #ffffff;
+        padding-top: 40px;
+        text-align: center;
+    }
+
+    .slide p {
+        color: #798896;
+        margin: 0 auto;
+        text-align: center;
+        padding: 30px;
+        padding-top: 0;
+    }
+
+    .action {
+        display: none;
+        margin: 100px auto;
+        width: 100%;
+        text-align: center;
+    }
+
+
+
+    /* Add this CSS to hide the .slider-for visually */
+    .slider-for {
+        display: none;
+        /* Hide the slider */
+    }
+
+    .slider h3 {
+        display: none;
+    }
+
+    @media (max-width: 800px) {
         .main {
-            font-family: Arial;
-            width: 80%;
-            display: block;
-            margin: 0 auto;
+            width: 100%;
+            /* Change width to 100% for screens smaller than or equal to 800px */
         }
 
+
         .slide {
-            width: 350px;
-            height: auto;
-            background: rgb(7, 7, 66);
-            /* RGBA color with 50% transparency */
+            width: 100%;
+            background: #0A2640;
             color: #ffffff;
-            /* Text color */
             border-radius: 10px;
             margin: 5px;
             cursor: grab;
         }
-
-
-
-        .slide a {
-            color: white;
-            text-decoration: none;
-
-        }
-
-        .slide h4 {
-            color: #ffffff;
-            padding-top: 40px;
-            text-align: center;
-        }
-
-        .slide p {
-            color: #798896;
-            margin: 0 auto;
-            text-align: center;
-            padding: 30px;
-            padding-top: 0;
-        }
-
-        .action {
-            display: none;
-            margin: 100px auto;
-            width: 100%;
-            text-align: center;
-        }
-
-
-
-        /* Add this CSS to hide the .slider-for visually */
-        .slider-for {
-            display: none;
-            /* Hide the slider */
-        }
-
-        .slider h3 {
-            display: none;
-        }
-
-        @media (max-width: 800px) {
-            .main {
-                width: 100%;
-                /* Change width to 100% for screens smaller than or equal to 800px */
-            }
-
-
-            .slide {
-                width: 100%;
-                background: #0A2640;
-                color: #ffffff;
-                border-radius: 10px;
-                margin: 5px;
-                cursor: grab;
-            }
-        }
+    }
