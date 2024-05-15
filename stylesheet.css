@@ -205,20 +205,20 @@ body {
 
 #portfolio-container {
     opacity: 0; /* Initially hide the element */
-    transform: translateY(10px) translateX(0); /* Move the element down by 40px without any horizontal movement */
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Add transition effect */
+    transform: translateY(5px) translateX(0); /* Move the element down by 40px without any horizontal movement */
+    transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out; /* Add transition effect */
 }
 
 #portfolio-container.show {
     opacity: 1;
     transform: translateY(0);
-    animation: slideUp 0.5s ease-in-out;
+    animation: slideUp 0.3s ease-in-out;
 }
 
 @keyframes slideUp {
     from {
         opacity: 0;
-        transform: translateY(10px); /* Starts from 40px below */
+        transform: translateY(5px); /* Starts from 40px below */
     }
     to {
         opacity: 1;
