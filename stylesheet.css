@@ -17,6 +17,26 @@ body {
     font-size: 39px;
     opacity: 0;
 }
+#down-arrow {
+    font-size: 72px;
+    color: #040965;
+    text-align: center;
+    margin-top: 0px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    display: block; /* Make sure it's displayed */
+
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;  /* make sure it's on top of other elements */
+}
+
+#down-arrow.visible {
+    opacity: 1;
+}
+
 
 /* Navbar styles */
 .navbar {
@@ -103,7 +123,7 @@ body {
     left: 0;
     width: 0; /* Initially set width to 0 */
     height: 100%;
-    background-color: #8B0000;
+    background-color: #040965;
     z-index: -1; /* Ensure the pseudo-element is behind the text */
     transition: width 0.3s ease; /* Add transition effect */
 }
@@ -151,7 +171,7 @@ body {
     left: 0;
     width: 0; /* Initially set width to 0 */
     height: 100%;
-    background-color: #8B0000;
+    background-color: #040965;
     z-index: -1; /* Ensure the pseudo-element is behind the text */
     transition: width 0.3s ease; /* Add transition effect */
 }
@@ -183,13 +203,18 @@ body {
     justify-content: center;
     padding-top: 50px;
 }
+.centered-h2 {
+    align-content: center;
+    text-align: center;
+    justify-content: center;
 
+}
 .button-passion {
     border-radius: 50px;
     border: 0;
     width: 170px; /* Fixed width for all buttons */
     margin: 10px;
-    background-color: rgb(7, 7, 66);
+    background-color: #040965;
     color: white;
     padding: 15px 30px; 
     font-style: bold;
@@ -333,7 +358,10 @@ body {
     color:#8B0000;
 }
 
-
+.padding-p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
 
 .portfolio-text-container3 {
@@ -362,7 +390,7 @@ body {
 
 a {
     text-decoration: none;
-    color: rgb(7, 7, 66);
+    color: #040965;
 }
 
 a:hover {
@@ -421,7 +449,7 @@ textarea {
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     background-color: rgb(255, 255, 255);
-    color: rgb(7, 7, 66);
+    color: #040965;
     cursor: pointer;
     border: 1px solid #333;
     border-radius: 3px;
@@ -493,6 +521,18 @@ textarea {
     text-align: center;
 }
 
+.padding-top {
+    padding: 70px;
+}
+
+.heybassh{
+    margin: 0px auto;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
 .text-content p, h1 {
  text-align: left;
  margin-left: 30px;
@@ -558,23 +598,28 @@ textarea {
 }
 
 .about-container {
-    margin: 0 auto;
-    text-align: center;
+    margin: 50px auto;
+    text-align: left;
     padding: 40px;
 }
 
-h2 {
+.about-container h2 {
     font-family: "Poppins", sans-serif;
-    font-stretch: expanded;
+    color: white; /* Make the text white */
     font-weight: 100;
-    margin: 0 auto;
-    text-align: center;
-    padding: 20px;
+    text-align: left;
+    margin-left: 12%; /* Left margin */
+    display: inline-block; /* Shrink-wrap the text */
+    background-color: #040965;
+     /* Padding to stretch the background slightly */
+    padding: 10px; 
+    padding-right:  100px;
 }
 
-p {
+
+.about-container p {
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
     padding: 20px;
 }
 
@@ -595,24 +640,9 @@ p {
     padding: 0;
 }
 
-.container-heybassh {
-    display: flex;
-    align-items: flex-start; /* Align items at the top */
-}
 
-.image-container {
-    width: 400px;
-    height: auto; /* Adjust width as needed */
-    margin-left: 10%; 
-    margin-top: 20px;
-}
 
-.text-content {
-    flex: 1;
-    margin-right: 10%;
-    margin-top: 10px;
-    padding-left: 70px;
-}
+
 
 .img-size {
     width: 400px;
@@ -628,12 +658,10 @@ p {
     margin-right: 10%;
 }
 
-.heybash-width {
-    margin: 0 auto;
-    align-content: center;
-    width: 80%;
-}
 
+.padding-space {
+    padding: 30px;
+}
 
 /* WordPress Page */
 .heading-section {

@@ -1,145 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="shortcut icon" type="image/jpeg" href="img/favicon.jpeg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/jpeg" href="img/favicon.jpeg">
+  <title>Portfolio of Rian</title>
 <link rel="stylesheet" href="stylesheet.css">
-<title>Portfolio of Rian</title>
+
+  <style>
+
+
+    .padding-top {
+      padding-top: 50px;
+      padding-bottom: 20px;
+    }
+
+    .heybassh {
+      text-align: center;
+      color: #222;
+    }
+
+    .heybash-width {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .project-card {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      width: 300px;
+      background-color: #fff;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      box-sizing: border-box;
+      transition: transform 0.2s;
+    }
+
+    .project-card:hover {
+      transform: scale(1.02);
+    }
+
+    .project-card h2 {
+      font-size: 20px;
+      margin-top: 0;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: auto;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      display: block;
+      margin: 0 auto 10px;
+    }
+
+    .text-content {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+
+
+    @media (max-width: 950px) {
+      .heybash-width {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<div class="navbar1">
+  <div class="navbar1">
     <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="aboutme.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contactme.html">Contact</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutme.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contactme.html">Contact</a></li>
     </ul>
-</div>
-<div>
-    <img class="contact-img" src="img/projects.jpg" alt="projects image top"></div>
-<div class="overlay-text">
-    <h1>Heybassh Projects</h1>
-    <p>Here are some projects I did with Heybassh</p>
   </div>
 
-<div class="heybash-width">
-  <div class="container-centered">
-    <h2><a href="https://celesyard.com/">Celesyard</a></h2>
-    <div class="container-heybassh">
-        <a href="https://celesyard.com/"> 
-            <div class="image-container">
-                <img class="img-size" src="img/celesyard.jpg">
-            </div>
-        </a>
-        <div class="text-content">
-            <p>Celesyard.com is an alternative health and funeral website, created with WordPress and the Divi theme.
-            Save and track your medical record and keep a personal diary. The site is created with WordPress Divi Theme.</p>
-            <p>Celesyard is one of the projects I worked on at Heybassh.</p>
-            <p><a href="https://celesyard.com/">Go to live site</a></p>
-        </div>
-    </div>
-  
-<br>
-<br>
+  <div class="padding-top"></div>
+  <h1 class="heybassh">Heybassh Projects</h1>
 
-<div class="container-centered">
-    <div class="container-centered">
-        <h2><a href="https://www.casaescazu.com/">Casa-Escazu</a></h2>
-    <div class="container-heybassh">
+  <div class="heybash-width">
+
+    <div class="project-card">
+      <h2 class="heybassh"><a href="https://celesyard.com/">Celesyard</a></h2>
+      <div class="image-container">
+        <a href="https://celesyard.com/">
+          <img src="img/celesyard.jpg" alt="Celesyard">
+        </a>
+      </div>
+      <div class="text-content">
+        <p>Celesyard.com is an alternative health and funeral website, created with WordPress and the Divi theme. Save and track your medical record and keep a personal diary.</p>
+        <p>Celesyard is one of the projects I worked on at Heybassh.</p>
+        <p><a href="https://celesyard.com/">Go to live site</a></p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h2 class="heybassh"><a href="https://www.casaescazu.com/">Casa-Escazu</a></h2>
+      <div class="image-container">
         <a href="https://www.casaescazu.com/">
-            <div class="image-container">
-                <img class="img-size1" src="img/casa.jpg">
-            </div>
+          <img src="img/casa.jpg" alt="Casa Escazu">
         </a>
-
-        <div class="text-content">
-           
-            <p>
-                Casa-Escazu is an realestate website selling homes in Costa Rica.
-        
-              
-                The site is created by the Heybassh Team and uses Hubspot CMS technology.
-            </p>
-               <p>
-                Casa-Escazu is a great example of the work that I have been part of at Heybassh.
-               </p>
-            <p><a href="https://www.casaescazu.com/">Go to live site</a></p>
-        </div>
-    </div>
+      </div>
+      <div class="text-content">
+        <p>Casa-Escazu is a real estate website selling homes in Costa Rica. The site is created by the Heybassh Team and uses HubSpot CMS technology.</p>
+        <p>Casa-Escazu is a great example of the work that I have been part of at Heybassh.</p>
+        <p><a href="https://www.casaescazu.com/">Go to live site</a></p>
+      </div>
     </div>
 
-<div class="container-centered">
-    <div class="container-centered">
-        <h2> <a href="https://feminar.lwacorporate.com/">Feminar</a></h2>
-    <div class="container-heybassh">
+    <div class="project-card">
+      <h2 class="heybassh"><a href="https://feminar.lwacorporate.com/">Feminar</a></h2>
+      <div class="image-container">
         <a href="https://feminar.lwacorporate.com/">
-            <div class="image-container">
-                <img class="img-size1" src="img/feminar.jpg">
-            </div>
+          <img src="img/feminar.jpg" alt="Feminar">
         </a>
-
-        <div class="text-content">
-           
-            <p>
-                Feminar is an alternative health and funeral website, created with wordpress and DIVI theme.
-               </p>
-               <p>
-                Save and track you medical record and keep a personal diary. The site is created with Wordpress Divi Theme.
-              
-             
-                Feminar is one of the projects I worked on at Heybassh.
-               </p>
-        
-            <p> <a href="https://feminar.lwacorporate.com/">Go to live site</a></p>
-        </div>
+      </div>
+      <div class="text-content">
+        <p>Feminar is an alternative health and funeral website, created with WordPress and the Divi theme. Save and track your medical record and keep a personal diary.</p>
+        <p>Feminar is one of the projects I worked on at Heybassh.</p>
+        <p><a href="https://feminar.lwacorporate.com/">Go to live site</a></p>
+      </div>
     </div>
+
   </div>
-
-
-   
-<div class="container-ct-form">
-
-<div class="portfolio-container-form">
-    <div class="container-heading">
-        <h2>Contact Me</h2>
-    </div>
-    <div class="container-form">
-        <form action="https://formspree.io/f/xeqwkvja" method="POST">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-            </div>
-            <button type="submit">Submit</button>
-        </form>
-    </div>
-
-
-</div>
-</div>
-
-
-<div class="footer-basic">
+  <div class="padding-space"></div>
+  <div class="footer-basic">
     <footer>
       <div class="social">
-            <a href="https://www.instagram.com/?hl=en" target="_blank"><img class="social-icons" src="img/instagram.png"></a>
-            <a href="https://twitter.com" target="_blank"><img class="social-icons" src="img/twitter.png"></a>
-            <a href="https://www.facebook.com/" target="_blank"><img class="social-icons" src="img/facebook.png"></a>
-        </div>
-    
-      <p class="copyright">RianC © 2024</p>
+        <a href="https://www.instagram.com/?hl=en" target="_blank"><img class="social-icons" src="img/instagram.png" alt="Instagram"></a>
+        <a href="https://twitter.com" target="_blank"><img class="social-icons" src="img/twitter.png" alt="Twitter"></a>
+        <a href="https://www.facebook.com/" target="_blank"><img class="social-icons" src="img/facebook.png" alt="Facebook"></a>
+      </div>
+      <p class="copyright">RianC © 2025</p>
     </footer>
   </div>
-
 
 </body>
 </html>
