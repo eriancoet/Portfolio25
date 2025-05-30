@@ -140,16 +140,16 @@ L391.996,300.589z" />
         <div class="featured-showcase">
             <div class="comp-container">
                 <div class="comp-img">
-                    <img src="img/Map-View.jpg" alt="image of comp">
+                    <img src="img/Map-View.png" alt="image of app">
                 </div>
                 <div class="text-content">
-                    <h1>Map-View</h1>
-                    <p>This is ReactJs Application for mapping out an area of customers on a google map.
+                    <h1>React Native App</h1>
+                    <p>This is React Native Application for registering voters and showing a poll.
                         <br>
                         <br>
-                        The Web-site is created with ReactJs.
+                        The App is a demo on expo.dev and needs to be opened with a smart phone.
                     </p>
-                    <a href="https://mapview-j1j3.onrender.com/MapList" target="_blank">
+                    <a href="https://expo.dev/accounts/paradox700/projects/voter-registration-app/updates/f3e45e50-b003-42e4-8d42-2a154eec23e6" target="_blank">
                         <button class="button-passion">Go to live site</button>
                     </a>
                 </div>
@@ -216,14 +216,14 @@ L391.996,300.589z" />
 
             <div class="container-projects">
                 <div class="img-container">
-                    <a
-                        href="https://hubspot-developers-1n44kqg-8913181.hs-sites.com/home?fbclid=IwAR0AtYJpy6-YBUkZL-YPEBxYwZY-gxWs03NLYzjuGo-ju38TWi-nzgUxUko_aem_AbETZwQKylLOadJYf-VrJ6uCwtWvbjGVhfr9DFX3tFB-O1PKFNmNUhU3Ikh6u8MzzsntEEH7BDQb1xA9KQWKu5ww">
+                    <a 
+                        href="https://hubspot-developers-1n44kqg-8913181.hs-sites.com/home?fbclid=IwAR0AtYJpy6-YBUkZL-YPEBxYwZY-gxWs03NLYzjuGo-ju38TWi-nzgUxUko_aem_AbETZwQKylLOadJYf-VrJ6uCwtWvbjGVhfr9DFX3tFB-O1PKFNmNUhU3Ikh6u8MzzsntEEH7BDQb1xA9KQWKu5ww" target="_blank">
                         <img class="img-projects" src="img/1.png" alt="Restaurant">
                     </a>
                 </div>
                 <div class="column-text">
                     <a
-                        href="https://hubspot-developers-1n44kqg-8913181.hs-sites.com/home?fbclid=IwAR0AtYJpy6-YBUkZL-YPEBxYwZY-gxWs03NLYzjuGo-ju38TWi-nzgUxUko_aem_AbETZwQKylLOadJYf-VrJ6uCwtWvbjGVhfr9DFX3tFB-O1PKFNmNUhU3Ikh6u8MzzsntEEH7BDQb1xA9KQWKu5ww">
+                        href="https://hubspot-developers-1n44kqg-8913181.hs-sites.com/home?fbclid=IwAR0AtYJpy6-YBUkZL-YPEBxYwZY-gxWs03NLYzjuGo-ju38TWi-nzgUxUko_aem_AbETZwQKylLOadJYf-VrJ6uCwtWvbjGVhfr9DFX3tFB-O1PKFNmNUhU3Ikh6u8MzzsntEEH7BDQb1xA9KQWKu5ww" target="_blank">
                         <h2>Restaurant</h2>
                     </a>
                      <div class="padding-p">
@@ -409,6 +409,19 @@ L391.996,300.589z" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
         <script src="slider.js" async defer></script>
+        <script>
+  function showDiv(index) {
+    const showcases = document.querySelectorAll('.featured-showcase');
+    showcases.forEach((div, i) => {
+      if (i === index) {
+        div.classList.add('show');
+      } else {
+        div.classList.remove('show');
+      }
+    });
+  }
+</script>
+
 </body>
 
 </html>
