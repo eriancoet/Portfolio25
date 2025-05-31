@@ -17,6 +17,8 @@ body {
     font-size: 39px;
     opacity: 0;
 }
+
+
 #down-arrow {
     font-size: 72px;
     color: #040965;
@@ -180,7 +182,13 @@ body {
     width: calc(100% - 4px); 
 }
 
-/* Add this to your stylesheet.css file */
+h2 {
+    font-family: "Poppins", sans-serif;
+    font-stretch: expanded;
+    font-weight: 100;
+    font-size: 25px;
+    opacity: 1;
+}
 
 .container {
     display: flex;
@@ -208,6 +216,10 @@ body {
     text-align: center;
     justify-content: center;
 
+}
+
+.passion-h2 {
+    font-family: "Poppins", sans-serif;;
 }
 .button-passion {
     border-radius: 50px;
@@ -276,6 +288,9 @@ body {
 
 .portfolio-text,
 .portfolio-text2 {
+     font-family: "Poppins", sans-serif;
+    font-stretch: expanded;
+    font-weight: 100;
     color: #333;
     /* Adjust text color as needed */
     font-size: 18px;
