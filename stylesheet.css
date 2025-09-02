@@ -809,3 +809,22 @@ textarea {
     
     }
 }
+@media screen and (max-width: 768px) {
+  .featured-showcase .text-content {
+    text-align: center !important;   /* force center text */
+  }
+
+  .featured-showcase .text-content h1,
+  .featured-showcase .text-content p,
+  .featured-showcase .text-content a {
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;  /* force center elements */
+    text-align: center !important;
+  }
+
+  .featured-showcase .text-content a button {
+    display: inline-block;
+    margin: 10px auto 0 !important; /* center button */
+  }
+}
