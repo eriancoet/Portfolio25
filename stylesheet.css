@@ -29,7 +29,7 @@ body {
     display: block; /* Make sure it's displayed */
 
     position: fixed;
-    bottom: 20px;
+    bottom: 35px; /* was 20px, now moved 10px higher */
     left: 50%;
     transform: translateX(-50%);
     z-index: 1000;  /* make sure it's on top of other elements */
