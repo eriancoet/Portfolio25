@@ -745,8 +745,8 @@ textarea {
 }
 /* Hamburger button */
 .hamburger {
-    position: sticky;   
-    display: block;
+    display: none;
+    position: fixed; /* FIXED instead of absolute */
     top: 15px;       /* adjust for navbar height */
     right: 35px;     /* distance from right edge */
     font-size: 24px;
