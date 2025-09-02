@@ -11,38 +11,70 @@
 
 <link rel="stylesheet" href="stylesheet.css">
 <title>Portfolio of Rian - About</title>
+<style>
+  /* Default (desktop/tablet) */
+  .about-container p.desktop-text {
+    display: block;
+  }
+  .about-container p.mobile-text {
+    display: none;
+  }
+
+  /* On mobile (max-width: 768px) */
+  @media (max-width: 768px) {
+    .about-container p.desktop-text {
+      display: none;
+    }
+    .about-container p.mobile-text {
+      display: block;
+    }
+  }
+</style>
 </head>
+
+
+ 
 <body>
 
-<div class="navbar1">
-<ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="aboutme.html">About</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="contactme.html">Contact</a></li>
-</ul>
+  <div class="navbar1" id="navbar1">
+  <button class="hamburger" id="hamburger">&#9776;</button>
+  <ul id="nav-links">
+    <li><a href="index.html"> Home </a></li>
+    <li><a href="aboutme.html"> About </a></li>
+    <li><a href="projects.html"> Projects </a></li>
+    <li><a href="contactme.html"> Contact </a></li>
+  </ul>
 </div>
-
 
 
 <div class="about-container">
-<h2>
-About Me
-</h2>
-<p>I am a passionate Web Developer, UX Designer and Graphic Designer. I specialize in JavaScript, HTML, CSS, REACT, Node, PHP and other langauges. I am living in Mpumalanga, South Africa.
+  <div class="about-parallax">
+    <h2>About Me</h2>
+    <!-- Full version for desktop -->
+    <p class="desktop-text">
+      I am a passionate Web Developer, UX Designer and Graphic Designer. 
+      I specialize in JavaScript, HTML, CSS, REACT, Node, PHP and other languages. 
+      I am living in Mpumalanga, South Africa.
+      <br><br>
+      I am dedicated and motivated in working with Websites, Apps, Graphic Design and Music. 
+      Debugging is part of my everyday activities as a web professional. 
+      I have learned to achieve new inspiration when fixing errors.
+    </p>
 
-    I am dedicated and motivated in working with Websites, Apps, Graphic Design and Music, I have great understanding of technology and I am a firm believer in the future of application development for the business sector.
-    
-    I did many projects in JavaScript, React, Node etc. and debugging is part of the everyday activities as a web professional. I have learned to achieve a new inspiration when fixing errors and debugging code.
-    
-    I am a fast learner and I am focused in Web Development, and I am a keen designer at work. </p>
+    <!-- Shorter version for mobile -->
+    <p class="mobile-text">
+      I am a Web Developer & Designer skilled in JavaScript, React, Node, and PHP. 
+      Based in Mpumalanga, South Africa. Passionate about technology & design.
+    </p>
+  </div>
 </div>
 
-    <div class="featured-container">
+
+<div class="featured-container">
         <h2>Featured Projects</h2>
         <div class="featured-line">
             <div class="featured-buttons">
-                <button onclick="showDiv(0)">Groupworx</button>
+                <button onclick="showDiv(0)">SA Braai Shop</button>
                 <button onclick="showDiv(1)">NextJS Portfolio</button>
                 <button onclick="showDiv(2)">React Project</button>
             </div>
@@ -51,17 +83,16 @@ About Me
         <div class="featured-showcase show">
             <div class="comp-container">
                 <div class="comp-img">
-                    <img src="img/groupworx.jpg" alt="image of comp">
+                    <img src="img/SA Braai Shop.jpg" alt="image of comp">
                 </div>
                 <div class="text-content">
-                    <h1>Groupworx</h1>
-                    <p>This is an HTML, CSS and JavaScript Project for a recruitment agency. We are in the process of
-                        making a ReactJS app.
+                    <h1>SA Braai Shop</h1>
+                    <p>This is MERN stack deployed on Render, it is an example of an e-commerce website.
                         <br>
                         <br>
-                        The Site is for recruitment and helps clients find the right person for the job.
+                        The Application is hosted on a free plan on Render, so it might take some time to load.
                     </p>
-                    <a href="https://eriancoet.github.io/groupworx/" target="_blank">
+                    <a href="https://sa-braai-shop-frontend.onrender.com" target="_blank">
                         <button class="button-passion">Go to live site</button>
                     </a>
                 </div>
@@ -96,7 +127,7 @@ About Me
                         <br>
                         The App is a demo on expo.dev and needs to be opened with a smart phone.
                     </p>
-                    <a href="https://expo.dev/accounts/paradox700/projects/voter-registration-app/updates/f3e45e50-b003-42e4-8d42-2a154eec23e6" target="_blank">
+                    <a href="https://expo.dev/artifacts/eas/6sgBrheNYhUomJ3GbjEWCN.apk" target="_blank">
                         <button class="button-passion">Go to live site</button>
                     </a>
                 </div>
@@ -345,6 +376,14 @@ About Me
                 <p class="copyright">RianC © 2025</p>
             </footer>
         </div>
+         <script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
         <script src="scriptJS1.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>

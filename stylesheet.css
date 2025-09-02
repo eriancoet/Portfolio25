@@ -281,6 +281,8 @@ h2 {
     /* Adjust as needed */
 }
 
+
+
 .portfolio-text-container2 {
     margin-top: 20px;
     /* Adjust as needed */
@@ -611,31 +613,54 @@ textarea {
     width: 100%;
     position: relative;
 }
-
 .about-container {
-    margin: 50px auto;
+    position: relative;
+    padding: 100px 20px; /* vertical padding OK */
+    color: white;
     text-align: left;
-    padding: 40px;
+    background-image: url('img/parralax.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
 }
 
-.about-container h2 {
-    font-family: "Poppins", sans-serif;
-    color: white; /* Make the text white */
-    font-weight: 100;
-    text-align: left;
-    margin-left: 12%; /* Left margin */
-    display: inline-block; /* Shrink-wrap the text */
-    background-color: #040965;
-     /* Padding to stretch the background slightly */
-    padding: 10px; 
-    padding-right:  100px;
+.about-parallax {
+    max-width: 800px;       /* limits content width */
+    margin: 0 auto;          /* centers the block on desktop */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;               /* spacing between h2 and p */
 }
 
+.about-parallax h2 {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0;
+}
 
-.about-container p {
-    margin: 0 auto;
-    text-align: left;
-    padding: 20px;
+.about-parallax p {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .about-parallax {
+        max-width: 90%;         /* fit mobile screen */
+        margin: 0 auto;         /* keep centered */
+        align-items: center;
+    }
+
+    .about-parallax h2,
+    .about-parallax p {
+        text-align: center;
+        width: 100%;
+    }
 }
 
 
@@ -689,6 +714,50 @@ textarea {
 .about-container p {
     line-height: 28px;
     margin: 0 10% ;
+}
+/* Hamburger button */
+.hamburger {
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none; /* hide by default */
+    z-index: 1100; /* make sure it is above navbar */
+}
+
+/* Mobile nav links hidden by default */
+#nav-links {
+    display: flex; /* desktop view */
+    gap: 20px;
+}
+
+/* Show hamburger menu and hide links on mobile */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block; /* show hamburger icon */
+    }
+
+    #nav-links {
+        display: none; /* hide menu initially */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* below navbar */
+        right: 20px;
+        background-color: #ffffff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    #nav-links.show {
+        display: flex; /* show menu when active */
+    }
+
+    #nav-links li {
+        margin: 10px 0;
+        text-align: right;
+    }
 }
 
 /* Adjust styles for smaller screens */

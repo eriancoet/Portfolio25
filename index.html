@@ -24,14 +24,15 @@
     </div>
 <div id="down-arrow">↓</div>
 
-    <div class="navbar" id="navbar">
-        <ul>
-            <li><a href="index.html"> Home </a></li>
-            <li><a href="aboutme.html"> About </a></li>
-            <li><a href="projects.html"> Projects </a></li>
-            <li><a href="contactme.html"> Contact </a></li>
-        </ul>
-    </div>
+  <div class="navbar" id="navbar">
+  <button class="hamburger" id="hamburger">&#9776;</button>
+  <ul id="nav-links">
+    <li><a href="index.html"> Home </a></li>
+    <li><a href="aboutme.html"> About </a></li>
+    <li><a href="projects.html"> Projects </a></li>
+    <li><a href="contactme.html"> Contact </a></li>
+  </ul>
+</div>
     <div id="portfolio-container" class="portfolio-container">
         <div class="portfolio-image-container">
             <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
@@ -95,7 +96,7 @@ L391.996,300.589z" />
         <h2>Featured Projects</h2>
         <div class="featured-line">
             <div class="featured-buttons">
-                <button onclick="showDiv(0)">Groupworx</button>
+                <button onclick="showDiv(0)">SA Braai Shop</button>
                 <button onclick="showDiv(1)">NextJS Portfolio</button>
                 <button onclick="showDiv(2)">React Project</button>
             </div>
@@ -104,17 +105,16 @@ L391.996,300.589z" />
         <div class="featured-showcase show">
             <div class="comp-container">
                 <div class="comp-img">
-                    <img src="img/groupworx.jpg" alt="image of comp">
+                    <img src="img/SA Braai Shop.jpg" alt="image of comp">
                 </div>
                 <div class="text-content">
-                    <h1>Groupworx</h1>
-                    <p>This is an HTML, CSS and JavaScript Project for a recruitment agency. We are in the process of
-                        making a ReactJS app.
+                    <h1>SA Braai Shop</h1>
+                    <p>This is MERN stack deployed on Render, it is an example of an e-commerce website.
                         <br>
                         <br>
-                        The Site is for recruitment and helps clients find the right person for the job.
+                        The Application is hosted on a free plan on Render, so it might take some time to load.
                     </p>
-                    <a href="https://eriancoet.github.io/groupworx/" target="_blank">
+                    <a href="https://sa-braai-shop-frontend.onrender.com" target="_blank">
                         <button class="button-passion">Go to live site</button>
                     </a>
                 </div>
@@ -149,7 +149,7 @@ L391.996,300.589z" />
                         <br>
                         The App is a demo on expo.dev and needs to be opened with a smart phone.
                     </p>
-                    <a href="https://expo.dev/accounts/paradox700/projects/voter-registration-app/updates/f3e45e50-b003-42e4-8d42-2a154eec23e6" target="_blank">
+                    <a href="https://expo.dev/artifacts/eas/6sgBrheNYhUomJ3GbjEWCN.apk" target="_blank">
                         <button class="button-passion">Go to live site</button>
                     </a>
                 </div>
@@ -396,6 +396,15 @@ L391.996,300.589z" />
                 <p class="copyright">RianC © 2025</p>
             </footer>
         </div>
+        <script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
+
         <script src="scriptJS.js"></script>
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-SEHQ0GXJ0R"></script>

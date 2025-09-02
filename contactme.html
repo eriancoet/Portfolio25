@@ -9,13 +9,14 @@
 </head>
 <body>
 
-<div class="navbar1">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="aboutme.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contactme.html">Contact</a></li>
-    </ul>
+ <div class="navbar1" id="navbar1">
+  <button class="hamburger" id="hamburger">&#9776;</button>
+  <ul id="nav-links">
+    <li><a href="index.html"> Home </a></li>
+    <li><a href="aboutme.html"> About </a></li>
+    <li><a href="projects.html"> Projects </a></li>
+    <li><a href="contactme.html"> Contact </a></li>
+  </ul>
 </div>
 
 
@@ -63,6 +64,13 @@
     </footer>
   </div>
 
+ <script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
 
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
 </body>
 </html>
