@@ -27,6 +27,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 downArrow.classList.add("visible");
                 console.log("✅ Added 'visible' class to #down-arrow");
             }
+            if (downArrow) {
+    downArrow.classList.add("visible");
+}
+
         }
     }
 

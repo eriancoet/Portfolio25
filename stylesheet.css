@@ -17,27 +17,28 @@ body {
     font-size: 39px;
     opacity: 0;
 }
-
-
 #down-arrow {
     font-size: 72px;
     color: #040965;
     text-align: center;
-    margin-top: 0px;
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-    display: block; /* Make sure it's displayed */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    display: block;
 
-    position: fixed;
-    bottom: 35px; /* was 20px, now moved 10px higher */
-    left: 50%;
+    /* Position initially fixed relative to viewport */
+    position: absolute;       /* use absolute so it scrolls with container */
+    bottom: 35px;             /* distance from bottom of intro container */
+    left: 50%;                
     transform: translateX(-50%);
-    z-index: 1000;  /* make sure it's on top of other elements */
+    z-index: 10;
+
+    pointer-events: none;
 }
 
 #down-arrow.visible {
     opacity: 1;
 }
+
 
 
 /* Navbar styles */
@@ -744,13 +745,17 @@ textarea {
 }
 /* Hamburger button */
 .hamburger {
-    font-size: 28px;
+    position: sticky;   
+    display: block;
+    top: 15px;       /* adjust for navbar height */
+    right: 35px;     /* distance from right edge */
+    font-size: 24px;
     background: none;
     border: none;
+    z-index: 1200;   /* above everything else */
     cursor: pointer;
-    display: none; /* hide by default */
-    z-index: 1100; /* make sure it is above navbar */
 }
+
 
 /* Mobile nav links hidden by default */
 #nav-links {
