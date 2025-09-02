@@ -731,6 +731,16 @@ textarea {
     gap: 20px;
 }
 
+
+ .navbar .logo,
+    .navbar1 .logo {
+        display: block;
+        position: absolute;
+        left: 20px;      /* distance from left edge */
+        top: 10px;       /* vertical alignment */
+        height: 40px;    /* adjust size as needed */
+        z-index: 1200;   /* above other elements */
+    }
 /* Show hamburger menu and hide links on mobile */
 @media screen and (max-width: 768px) {
     .hamburger {
