@@ -790,7 +790,7 @@ textarea {
     #nav-links {
         display: none; /* hide menu initially */
         flex-direction: column;
-        position: absolute;
+        position: fixed;
         top: 60px; /* below navbar */
         right: 20px;
         background-color: #ffffff;
@@ -812,7 +812,7 @@ textarea {
 @media screen and (max-width: 768px) {
     .navbar1 .hamburger {
         display: block;       /* show hamburger icon */
-        position: absolute;   /* position relative to navbar */
+        position: fixed;   /* position relative to navbar */
         right: 35px;          /* distance from right edge */
         top: 15px;            /* adjust vertical position if needed */
         cursor: pointer;
