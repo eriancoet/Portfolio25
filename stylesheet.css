@@ -767,7 +767,7 @@ textarea {
  .navbar .logo,
     .navbar1 .logo {
         display: block;
-        position: absolute;
+        position: fixed;
         left: 20px;      /* distance from left edge */
         top: 10px;       /* vertical alignment */
         height: 40px;    /* adjust size as needed */
@@ -775,17 +775,23 @@ textarea {
     }
 /* Show hamburger menu and hide links on mobile */
 @media screen and (max-width: 768px) {
-    .hamburger {
+    .hamburger  {
         display: block;       /* show hamburger icon */
-        position: absolute;   /* position relative to navbar */
+        position: fixed;   /* position relative to navbar */
         right: 35px;          /* distance from right edge */
-        top: 15px;            /* adjust vertical position if needed */
+        top: 50px;            /* adjust vertical position if needed */
         cursor: pointer;
         font-size: 24px;      /* optional: adjust size */
         background: none;     /* keep it clean */
         border: none;
         z-index: 1100;        /* make sure it’s above the nav links */
     }
+
+    /* Move logo down too */
+  .navbar .logo,
+  .navbar1 .logo {
+    top: 50px;   /* mobile position */
+  }
 
     #nav-links {
         display: none; /* hide menu initially */
@@ -814,7 +820,7 @@ textarea {
         display: block;       /* show hamburger icon */
         position: fixed;   /* position relative to navbar */
         right: 35px;          /* distance from right edge */
-        top: 15px;            /* adjust vertical position if needed */
+        top: 50px;            /* adjust vertical position if needed */
         cursor: pointer;
         font-size: 24px;      /* optional: adjust size */
         background: white;
@@ -843,6 +849,8 @@ textarea {
         margin: 10px 0;
         text-align: right;
     }
+
+   
 }
 
 
