@@ -16,6 +16,7 @@
   /* Default (desktop/tablet) */
   .about-container p.desktop-text {
     display: block;
+    color:rgb(255, 255, 255);
   }
   .about-container p.mobile-text {
     color: white;
@@ -79,14 +80,16 @@
 
 
 <div class="featured-container">
-        <h2>Featured Projects</h2>
-        <div class="featured-line">
-            <div class="featured-buttons">
-                <button onclick="showDiv(0)">SA Braai Shop</button>
-                <button onclick="showDiv(1)">NextJS Portfolio</button>
-                <button onclick="showDiv(2)">React Project</button>
-            </div>
-        </div>
+  <h2>Featured Projects</h2>
+  <div class="featured-line">
+    <div class="featured-buttons">
+      <button onclick="showDiv(0, this)">SA Braai Shop</button>
+      <button onclick="showDiv(1, this)">NextJS Portfolio</button>
+      <button onclick="showDiv(2, this)">React Project</button>
+    </div>
+  </div>
+</div>
+
         <div class="spacer"></div>
         <div class="featured-showcase show">
             <div class="comp-container">

@@ -508,6 +508,11 @@ textarea {
     color: rgb(0, 0, 0);
 }
 
+.featured-buttons button.active {
+  background-color: #cfe8ff; /* light blue */
+  color: #003366; /* dark blue text */
+}
+
     .featured-showcase {
         display: none; /* Hide all divs by default */
         opacity: 0; /* Set initial opacity to 0 */
