@@ -17,20 +17,14 @@ document.addEventListener("DOMContentLoaded", () => {
             // Typing finished
             navbar.classList.add("visible");
 
-            // Restore scrolling
-            setTimeout(() => {
-                document.body.style.overflow = "auto";
-            }, 2000);
-
             // Show down arrow immediately
             if (downArrow) {
                 downArrow.classList.add("visible");
                 console.log("✅ Added 'visible' class to #down-arrow");
             }
-            if (downArrow) {
-    downArrow.classList.add("visible");
-}
 
+            // Restore scrolling sooner (no unnecessary delay)
+            document.body.style.overflow = "auto";
         }
     }
 
@@ -51,8 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
             portfolioContainer.classList.add("show");
             window.removeEventListener("scroll", handleScroll);
         }
-        // Optional: Don't hide the arrow on mobile scroll
-        // if (downArrow) downArrow.classList.remove("visible");
     }
 
     window.addEventListener("scroll", handleScroll);
